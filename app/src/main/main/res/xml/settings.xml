@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Your pet profile" >
+        <EditTextPreference
+            android:title="Pet's name"
+            android:summary="What is the name of your pet?"
+            android:key="prefPetname"/>
+
+        <ListPreference
+            android:key="prefBreed"
+            android:entries="@array/list_breeds"
+            android:summary="Choose a your pet's breed"
+            android:entryValues="@array/syncFrequencyValues"
+            android:title="Breed" />
+
+        <Preference
+            android:key="prefDateOfBirth"
+            android:summary="What is your pet's birthday?"
+            android:title="Date of Birth"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Events I" >
+        <EditTextPreference
+            android:title="Event title"
+            android:summary="Event that you want to track"
+            android:key="prefEvent1"/>
+
+        <EditTextPreference
+            android:title="Frequency"
+            android:summary="How many times per day"
+            android:key="prefFrequency1"/>
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefAlertEvent1"
+            android:summary="gives alerts"
+            android:title="Notify about event" >
+        </CheckBoxPreference>
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Events II" >
+        <EditTextPreference
+            android:title="Event title"
+            android:summary="Event that you want to track"
+            android:key="prefEvent2"/>
+
+        <EditTextPreference
+            android:title="Frequency"
+            android:summary="How many times per day"
+            android:key="prefFrequency2"/>
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefAlertEvent2"
+            android:summary="gives alerts"
+            android:title="Notify about event" >
+        </CheckBoxPreference>
+
+
+    </PreferenceCategory>
+</PreferenceScreen>

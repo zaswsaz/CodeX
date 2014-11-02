@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    			xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white"
+                tools:context="com.special.MenuActivity$HomeFragment">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            
+
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="Fit Pet"
+                android:src="@drawable/fitpetlogo"/>
+    	
+    	<LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center">
+
+                <com.special.utils.UICircularImage
+                    android:id="@+id/btn_open_menu"
+                    android:layout_margin="20dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/garik"
+                    android:padding="10dp"
+                    />
+
+            <com.special.utils.UICircularImage
+                android:id="@+id/btn_pet2"
+                android:layout_margin="20dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/shosha"
+                android:padding="10dp"
+                />
+        
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
